@@ -35,10 +35,8 @@ var getServers = function() {
                     if (resp.servers[i]['online'].length > 0) {
                         server_box = document.getElementById('server_box').innerHTML;
                         server_box += "<div class = 'server playersonline' style='display: none'>";
-                        server_box += "<div class = 'padd'>";
                         server_box += "<p class='players'>Players online: </p>";
                         server_box += "<span class = 'connect'> </span>";
-                        server_box += "</div> ";
                         server_box += "</div> ";
                         document.getElementById('server_box').innerHTML = server_box;
                         index_connect = Array.from(document.getElementsByClassName('connect'));
