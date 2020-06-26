@@ -104,7 +104,7 @@ body {
 .invert {
     border-width: 1px;
     border-color: white;
-    background-color: rgba(30, 30, 30);;
+    background-color: rgba(30, 30, 30);
     border-style: solid;
     border-radius: 0.2em;
     float: none;
