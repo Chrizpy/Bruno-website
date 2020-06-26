@@ -16,16 +16,17 @@ var getServers = function() {
                 for (i = 0; i < resp.servers.length; i++) { 
                     
                     server_box += "<div class = 'server'>";
-                    server_box += "<div class = 'padd'>";
                     server_box += "<p class = 'dot'></p>";
                     server_box += "<p class = 'game'>Game: </p>";
                     server_box += "<p class = 'game_type'>Game mode: </p>";
                     server_box += "<p class = 'players'>Players online: </p>";
                     server_box += "<p class = 'motd'>Motd: </p>";
-                    if (resp.servers[i]['online'].length > 0)
-                        server_box += "<button class = 'buttons' onclick = 'showPlayers(" + i + "); return false;'>Show players </button>";
+                    if (resp.servers[i]['online'].length > 0) {
+                        server_box += "<div class = 'button-spacer'>";
+                        server_box += "<button class = 'buttons invert' onclick = 'showPlayers(" + i + "); return false;'>Show players online</button>";
+                        server_box += "</div>";
+                    }
 
-                    server_box += "</div> ";
                     server_box += "</div> ";
     
                     document.getElementById('server_box').innerHTML = server_box;
