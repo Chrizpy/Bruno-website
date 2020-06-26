@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    
+    background-color: rgb(30, 30, 30);
+    color: white;
+    
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#top-box {
+    background-color: rgb(37, 102, 202);
+    
+    padding: 100px 100px;
+    border-radius: 0 0 0.2em 0.2em;
+    margin-bottom: 5em;
+
+    text-align: center;
+}
+
+#top-box p{
+    font-style: normal;
+}
+
+#top-box h1 {
+    font-size: 225%;
+    font-weight: normal;
+    margin: 0 0 0.25% 0;
+}
+
+#box {
+    position: relative;
+    margin: auto;
+    
+    width: 100%;
+    height: 40%;
+
+    background-color: rgba(0, 0, 10, 0.3);
+    border-radius: 0.2em;
+}
+
+#box p{
+    margin: 0;
+}
+
+#server_box {
+    width: 50%;
+    float: left;
+}
+
+#info_box {
+    width: 50%;
+    float: right;
+}
+
+.server {
+    margin: auto;
+    margin-top: 10px;
+    
+    padding: 8px 8px 15px 8px;
+    width: 80%;
+    
+    background-color: rgb(37, 102, 202);
+    border-radius: 0.2em;
+    border-color: rgb(37, 102, 202);
+}
+
+.spacer {
+    margin-top: 40px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+
+    margin-right: 5px !important;
+    margin-top: 5px !important;
+
+    background-color: #bbb;
+    border-radius: 50%;
+
+    text-align: right;
+    position: relative;
+    float: right;
+}
+
+.game, .game_type, .players, .motd {
+    color: white;
+    
+}
+
+.buttons {
+    float: right;
+    height: 25px;
+    
+    background-color: transparent;
+    color: white;
+    
+    border-width: 1px;
+    border-color: rgb(37, 102, 202);
+    border-style: solid;
+    border-radius: 0.2em;
+}
+
+.tab {
+    height: 25px !important;
+
+    background-color: rgba(30, 30, 30);
+    border-style: solid;
+    border-width: 1px;
+    padding-bottom: 8px;
+}
+
+.tab p {
+    float: left;
+    
+    border-radius: 0.2em;
+    padding-left: 15px;
+}
+
+.identifier {
+    background-color: rgb(30, 30, 30);
+    margin-right: 10px;
+}
+
+.loginform input{
+    background-color: rgba(0, 0, 10);
+    color: white;
+    border: 1px solid rgb(37, 102, 202);
+}
+
+.terminal {
+    width: 80% !important;
+    height: 50% !important;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.terminal-input {
+    border: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#feed {
+    background-color: white;
+    width: 100%;
+    height: 95%;
+}
+
+#input-box {
+    background-color: red;
+    width: 100%;
+    height: 35px
+}
+
+.tool-tip {
+    color: green;
+}
+
+@media (min-width: 1020px) { 
+     
+    #box {
+        width: 1020px;
+        height: 100%;
+        margin: auto;
+        background-color: rgba(0, 0, 10, 0.3);
+    }
+
+}
+
+@media (max-width: 560px) {
+   
+    .server {
+        
+       
+    }
+
+    #server_box {
+        width: 95%;
+        float: none;
+        padding: 0;
+    }
+
+    #info_box {
+        width: 95%;
+        float: none;
+        padding: 0;
+    }
+
+    
+
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
+   {
+    
+    #top-box h1 {
+        margin: 0;
+        position: relative;
+        padding-top: 2.5vh;
+        font-size: 7.2vw;
+        text-align: center;
+        
+    }
+
+    .server {
+        width: 100%;
+        height: 125px;
+    }
+
+}
+

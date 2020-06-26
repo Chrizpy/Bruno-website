@@ -1,0 +1,206 @@
+/* CSS that should be displayed if width is equal to or less than 800px goes here */
+@font-face {
+    font-family: 'Menlo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Menlo Regular'), url('../fonts/Menlo-Regular.woff') format('woff');
+    }
+
+body {
+    background-repeat: no-repeat;
+    background-color: rgb(30, 30, 30);
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Menlo Regular';
+    font-weight: bold;
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#top-box {
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    background-color: rgb(30, 30, 30);
+}
+
+#top-box h1 {
+    font-size: 55px;
+    text-align: center;
+    color: rgb(37, 102, 202);
+    margin: auto;
+    height: 100%;
+}
+
+#server_box {
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.server {
+    margin: auto;
+    margin-top: 5px;
+    width: 80%;
+    height: 110px;
+    background-color: rgb(37, 102, 202);
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    text-align: right;
+    position: relative;
+    float: right;
+    margin-right: 5px !important;
+    margin-top: 5px !important;
+  }
+
+#box {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: rgba(0, 0, 10, 0.3);
+}
+
+#box p{
+    margin: 0;
+}
+
+
+.padd {
+    width: 95%;
+    height: 100%;
+    padding: 5px;
+    margin: auto;
+}
+
+.game, .game_type, .players, .motd {
+    color: white;
+    
+}
+
+.buttons {
+    float: right;
+    height: 25px;
+    background-color: rgba(0, 0, 10);
+    color: rgb(37, 102, 202);
+    border: 1px solid rgb(37, 102, 202);
+    font-family: 'Menlo Regular';
+}
+
+.tweak {
+    height: 25px !important;
+}
+
+.identifier {
+    color: white;
+    background-color: rgb(30, 30, 30);
+    margin-right: 10px;
+}
+
+.loginform input{
+    background-color: rgba(0, 0, 10);
+    color: white;
+    border: 1px solid rgb(37, 102, 202);
+}
+
+.terminal {
+    width: 80% !important;
+    height: 50% !important;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.terminal-input {
+    border: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+#feed {
+    background-color: white;
+    width: 100%;
+    height: 95%;
+}
+
+#input-box {
+    background-color: red;
+    width: 100%;
+    height: 35px
+}
+
+.tool-tip {
+    color: green;
+}
+
+@media (min-width: 1020px) { 
+     
+    #box {
+        width: 1020px;
+        height: 100%;
+        margin: auto;
+        background-color: rgba(0, 0, 10, 0.3);
+    }
+
+}
+
+@media (max-width: 790px) {
+
+    #top-box {
+        width: 100%;
+        height: 75px;
+        margin-top: (8vw / 2);
+    }
+    
+    #top-box h1 {
+        padding: 2px;
+        font-size: 6.8vw;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 560px) {
+   
+    .server {
+        width: 100%;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
+   {
+    
+    #top-box h1 {
+        margin: 0;
+        position: relative;
+        padding-top: 2.5vh;
+        font-size: 7.2vw;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .server {
+        width: 100%;
+        height: 125px;
+    }
+
+}
+

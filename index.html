@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#333333">
+        <title>bruno_server</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        
+    </head>
+    <body cz-shortcut-listen="true">
+        <div id="container">
+            <div id="top-box">
+                <h1>Bruno </h1>
+                <p> @ Björnkärrsgatan </p>
+            </div>
+            <div id="box">
+                <div id="server_box">
+                    <div class="server tab">
+                        <p> Game server list</p>
+                        <button id="rfrsh_button" class="buttons" type="button" onclick="getServers(); return false;"> Refresh </button>
+                    </div>
+                <div class="server"> 
+                        <p class="dot" style="background: rgb(127, 255, 0) none repeat scroll 0% 0%;"></p>
+                        <p class="game">Game: <span class="identifier">Minecraft</span></p><p class="game_type">Game mode: <span class="identifier">SMP</span></p><p class="players">Players online: <span class="identifier">0 / 20</span></p><p class="motd">Motd: <span class="identifier">mc server brought to you by bruno</span></p>
+                    
+                </div> 
+            </div>   
+                <div id = "info_box">
+                    <div class = "server tab">
+                        <p> About Bruno </p>
+                    </div>
+                    <div class = "server">
+                        <p>Bruno is my personal server computer that I have used to lab with during my time as a student at the University of Linköping.</p>
+                        <p>
+                        Bruno started out as a system administrator lab companion for a course. The things I learned in that course, I tried on Bruno to see if I understood it.
+                        That started a theme of leveraging Bruno to different courses along the way, like web development which was the last course that used Bruno and the reason
+                        why Bruno hosts this page today.
+                        </p>
+                        <p> Currently Bruno hosts it's own webserver with nginx. It uses Python Flask as the backend. Classic HTML5, CSS and JavaScript is used, we did not use any frameworks like Angular, Vue or React at my university, but I'm interested in learning more about these.</p>
+                    </div>
+                    <div class = "server tab">
+                        <p> About the developer </p>
+                    </div>
+                    <div class = "server">
+                        <p> 
+                            My name is Christoffer Akouri, I am 22 years old and I'm a Computer Engineering student at Linköping University with the intention of graduating the fall of 2020. </p>
+                            <p> 
+                            Computers or hardware have always intrigued me from a young age. From playing with various consoles or handhelds, peaked my interest in that world and its potentials.
+                            After building my first computer at the age of 13, I knew what I wanted to do in my life and that it should have something to do with hardware, software or both.
+                            </p>
+                            <p>
+                            The year 2017 I got into Linköping University right after the swedish equivalent of high school. I really enjoyed my time here and I really feel like I have grown a lot
+                            and learnt a lot along the way.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <script src="static/mc_serv.js"></script>
+    
+</body></html>
